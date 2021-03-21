@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Modern Image Picker</string>
+    <string name="gallery">Gallery</string>
+    <string name="camera">Camera</string>
+    <string name="processing_image">Processing image</string>
+</resources>
