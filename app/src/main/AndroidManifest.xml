@@ -12,9 +12,10 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.GalleryCamera"
-        android:requestLegacyExternalStorage="true">
-        <activity android:name="maulik.modernimagepicker.MainActivity"
+        android:theme="@style/Theme.GalleryCamera">
+        <activity
+            android:name="maulik.modernimagepicker.MainActivity"
+            android:exported="true"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,8 +25,8 @@
         </activity>
 
         <provider
-            android:authorities="maulik.modernimagepicker.fileprovider"
             android:name="androidx.core.content.FileProvider"
+            android:authorities="maulik.modernimagepicker.fileprovider"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data
